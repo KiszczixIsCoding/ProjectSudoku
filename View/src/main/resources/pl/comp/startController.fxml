@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="container1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.comp.StartController">
+    <children>
+        <Button fx:id="button1" layoutX="22.0" layoutY="207.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text="%start" />
+        <Label id="title" layoutX="128.0" layoutY="14.0" prefHeight="39.0" prefWidth="251.0" text="SUDOKU EXPERT">
+            <font>
+                <Font name="Bookman Old Style Bold" size="27.0" />
+            </font>
+        </Label>
+      <Line endX="178.0" layoutX="211.0" layoutY="53.0" startX="-100.0" />
+      <MenuButton fx:id="menuButton1" contentDisplay="CENTER" layoutX="22.0" layoutY="246.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="136.0">
+        <items>
+            <MenuItem fx:id="menuItem1" mnemonicParsing="false" text="%level.easy" />
+            <MenuItem fx:id="menuItem2" mnemonicParsing="false" text="%level.medium" />
+            <MenuItem fx:id="menuItem3" mnemonicParsing="false" text="%level.hard" />
+            <MenuItem fx:id="menuItem4" mnemonicParsing="false" text="%level.expert" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="nameField" layoutX="196.0" layoutY="138.0" prefHeight="36.0" prefWidth="161.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="102.0" layoutY="141.0" prefHeight="29.0" prefWidth="82.0" text="%name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="48.0" layoutY="93.0" prefHeight="29.0" prefWidth="136.0" text="%lang">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinLanguage" layoutX="196.0" layoutY="95.0" prefHeight="29.0" prefWidth="161.0" />
+      <Line endX="323.0" layoutX="142.0" layoutY="375.0" startX="-100.0" stroke="#948f8f" />
+      <Label fx:id="labelSubject" layoutX="46.0" layoutY="385.0" prefHeight="17.0" prefWidth="223.0" textFill="#9a9797" />
+      <Label fx:id="labelSemester" alignment="CENTER_RIGHT" layoutX="332.0" layoutY="385.0" prefHeight="17.0" prefWidth="136.0" textFill="#9a9797" />
+      <Button fx:id="loadButton" layoutX="341.0" layoutY="207.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text="%load.file" />
+      <TextField fx:id="loadField" layoutX="341.0" layoutY="246.0" prefHeight="36.0" prefWidth="136.0" />
+      <Button fx:id="loadBaseButton" disable="true" layoutX="182.0" layoutY="207.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" text="%load.database" />
+      <TextField fx:id="loadBaseField" layoutX="182.0" layoutY="246.0" prefHeight="36.0" prefWidth="136.0" />
+    </children>
+</Pane>
